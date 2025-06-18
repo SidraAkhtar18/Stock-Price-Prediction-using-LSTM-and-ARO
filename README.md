@@ -87,8 +87,5 @@ Aap LSTM model aur ARO parameters customize kar sakte hain models/lstm_model.py 
 8. Contribution
 Aap is project ko fork karke improve kar sakte hain. Issues report karein ya pull requests bhejein.
 
-9. License
-MIT License (c) 2025 [Your Name]
-
 10. Contact Information
-Email: your.email@example.com
+Email: maliksidraakhtar18@gmail.com
