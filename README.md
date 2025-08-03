@@ -1,91 +1,111 @@
-Stock Price Prediction using LSTM and Artificial Rabbit Optimization (ARO)
-1. Project Overview
-Ye project stock prices predict karta hai using deep learning technique Long Short-Term Memory (LSTM) neural network. Hyperparameters ko optimize karne ke liye Artificial Rabbit Optimization (ARO) algorithm use kiya gaya hai. Is project mein ek user-friendly graphical interface (GUI) Streamlit ke zariye banaya gaya hai jisme user apni CSV file upload karke apne stock data ka prediction dekh sakta hai.
+📈 Stock Price Prediction using LSTM & Artificial Rabbit Optimization (ARO)
+🧠 1. Project Overview
+This project predicts stock prices using a deep learning technique called Long Short-Term Memory (LSTM) neural network.
+To optimize hyperparameters, a nature-inspired algorithm called Artificial Rabbit Optimization (ARO) is used.
+A user-friendly GUI is built with Streamlit, allowing users to upload a CSV file and view the predicted stock data in real-time.
 
-2. Project Features
-Data Preprocessing: Stock data ko clean aur scale karta hai taki model acche se train ho sake.
+🚀 2. Project Features
+🔹 Data Preprocessing
+Clean and scale stock data for efficient model training.
 
-LSTM Model: Time series data ke liye specially designed neural network.
+🔹 LSTM Model
+A deep neural network specially designed for time-series forecasting.
 
-Artificial Rabbit Optimization: Hyperparameter tuning ke liye ek naya nature-inspired algorithm.
+🔹 Artificial Rabbit Optimization (ARO)
+An advanced algorithm used for hyperparameter tuning.
 
-Streamlit GUI: Interactive interface jahan user file upload karke real-time result le sakta hai.
+🔹 Streamlit GUI
+Interactive interface to upload data and view predictions instantly.
 
-Evaluation Metrics: Model ki performance measure karne ke liye MAE, MSE, RMSE use hote hain.
+🔹 Evaluation Metrics
+Performance is measured using MAE, MSE, and RMSE.
 
-Visualization: Actual aur predicted stock prices ka graph plot hota hai.
+🔹 Visualization
+Graphs to compare actual vs. predicted stock prices.
 
-3. Project Structure
-Folder/File	Description
-app.py	Streamlit GUI application ka main script
-data/	Sample stock CSV files
-models/lstm_model.py	LSTM neural network ka code
-optimization/aro_optimizer.py	Artificial Rabbit Optimization algorithm
-utils/preprocessing.py	Data cleaning aur scaling functions
+🗂️ 3. Project Structure
+📁 Folder/File	📄 Description
+app.py	Main script for the Streamlit GUI
+data/	Sample CSV stock files
+models/lstm_model.py	LSTM neural network implementation
+optimization/aro_optimizer.py	ARO algorithm for hyperparameter tuning
+utils/preprocessing.py	Data cleaning and scaling functions
 utils/metrics.py	Performance metrics calculation
-utils/plot.py	Plot banane ke liye functions
-requirements.txt	Python packages ki list
-README.md	Project ka documentation file
+utils/plot.py	Plotting functions
+requirements.txt	Required Python packages
+README.md	Project documentation
 
-4. Installation Guide
-Python 3.7 ya uske upar version install karein.
+⚙️ 4. Installation Guide
+📌 Requirements: Python 3.7 or higher
+✅ Recommended: Use a virtual environment
 
-Virtual environment banayen (optional, recommended):
-
+🔧 Steps:
 bash
 Copy
 Edit
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-Required packages install karein:
 
+# Activate environment
+# On Linux/Mac:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+📦 Install dependencies:
 bash
 Copy
 Edit
 pip install -r requirements.txt
-5. How to Run
-Terminal/Command prompt open karein aur project folder mein jayein.
+▶️ 5. How to Run
+Open Terminal/Command Prompt
 
-Streamlit app chalayein:
+Navigate to your project directory
+
+Run the Streamlit app:
 
 bash
 Copy
 Edit
 streamlit run app.py
-Web browser mein Streamlit app open ho jayega.
+The app will open in your web browser
 
-Apni stock data CSV file upload karein.
+Upload your stock data CSV file
 
-Model hyperparameter tuning karega, train hoga, aur prediction results screen par show karega.
+The model will:
 
-Evaluation metrics aur graphs bhi display honge.
+Perform hyperparameter tuning
 
-6. CSV File Format Requirements
-CSV file mein columns hone chahiye:
+Train using LSTM
+
+Show prediction results, evaluation metrics, and visual graphs
+
+📊 6. CSV File Format Requirements
+Your CSV file should contain the following columns:
 
 Date (optional)
 
-Close/Last (ya close price ka jo bhi column ho)
+Close/Last (mandatory)
 
 Volume, Open, High, Low (optional)
 
-Example format:
+📁 Example Format:
+mathematica
+Copy
+Edit
+Date,Close/Last,Volume,Open,High,Low
+2020-01-02,$296.24,33870100,296.24,300.60,295.19
+💡 7. Notes & Tips
+✅ Date column is ignored during training.
+✅ Code automatically handles $ symbols and commas in the price.
+✅ Hyperparameter tuning is set to 5 iterations by default – more iterations = better accuracy (but longer processing).
+✅ You can customize LSTM and ARO parameters in models/lstm_model.py and optimization/aro_optimizer.py.
 
-Date	Close/Last	Volume	Open	High	Low
-2020-01-02	$296.24	33870100	296.24	300.60	295.19
+🤝 8. Contribution
+We welcome contributions!
+🔹 Fork the project
+🔹 Report issues
+🔹 Submit pull requests to improve the project
 
-7. Notes and Tips
-Date column model training ke liye use nahi hota, preprocessing mein ignore ho jata hai.
+📬 9. Contact Information
+📧 Email: maliksidraakhtar18@gmail.com
 
-Close price column ke andar agar $ ya comma ho to wo code handle karta hai.
-
-Hyperparameter tuning default 5 iterations ke liye set hai — zyada iterations se accuracy badhegi magar processing time bhi badhega.
-
-Aap LSTM model aur ARO parameters customize kar sakte hain models/lstm_model.py aur optimization/aro_optimizer.py mein.
-
-8. Contribution
-Aap is project ko fork karke improve kar sakte hain. Issues report karein ya pull requests bhejein.
-
-10. Contact Information
-Email: maliksidraakhtar18@gmail.com
